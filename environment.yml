@@ -1,0 +1,14 @@
+# Starter recipe, not an installation-tested or exact dependency lock.
+# Activate an existing working allensdk environment instead of recreating it.
+name: allensdk
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - allensdk
+      - scikit-learn
+      - numpy
+      - pandas
+      - matplotlib
+      - jupyterlab
+      - ipykernel

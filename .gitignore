@@ -1,0 +1,36 @@
+# Local recordings, derived arrays, and generated model artifacts.
+/data/
+/artifacts/
+*.nwb
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.joblib
+
+# Environments and Python/Jupyter caches.
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Local editor configuration and OS metadata.
+.idea/
+.vscode/
+Thumbs.db
+.DS_Store
+
+# Credentials and local configuration.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Temporary output.
+*.log
+*.tmp
+~$*

@@ -1,0 +1,45 @@
+name: Plan an experiment
+description: Plan a neural-decoding comparison before running it.
+title: "[Experiment] "
+body:
+  - type: markdown
+    attributes:
+      value: "Use this issue to plan or discuss the experiment. Keep the reproducible run record in experiments/E___-short-name.md."
+  - type: input
+    id: experiment_id
+    attributes:
+      label: Experiment ID
+      placeholder: E001
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Question and planned change
+      description: What are you testing, and what stays fixed?
+    validations:
+      required: true
+  - type: textarea
+    id: data
+    attributes:
+      label: Data and features
+      description: Session, region, image IDs, unit filters, and response window.
+    validations:
+      required: true
+  - type: textarea
+    id: evaluation
+    attributes:
+      label: Evaluation plan
+      description: Split method, saved split IDs, baseline, metric, and hyperparameter selection. Keep the final test set reserved.
+    validations:
+      required: true
+  - type: textarea
+    id: completion
+    attributes:
+      label: Completion checklist
+      value: |
+        - [ ] Code version and settings recorded
+        - [ ] Run completed or failure documented
+        - [ ] Measured validation results and artifact paths saved
+        - [ ] Interpretation and next step recorded
+        - [ ] EXPERIMENTS.md index updated
